@@ -1,7 +1,31 @@
+body {
+    background: red;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#inputBoxArea {
+    text-align: center;
+}
+
 #inputBox {
     text-align: center;
 }
 
 #taskItems {
+    /* margin: auto; */
     text-align: center;
+    /* width: 50%;
+    padding: 20px;
+    display: inline-block;
+    background: #ffffff; */
+}
+
+#submitBtn {
+    border-radius: 10%;
+    color: aliceblue;
+    background: blue;
 }
