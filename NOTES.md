@@ -12,3 +12,6 @@ As a user I want the ability to delete a task item if it is no longer needed.
 As a user I want the task items to be there even after refreshing the page.
 
 
+Acceptance Criteria
+
+Mock-Up

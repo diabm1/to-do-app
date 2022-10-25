@@ -15,6 +15,10 @@ header {
     text-align: center;
 }
 
+#divContainingTasks{
+    text-align: center;
+}
+
 #taskItems {
     /* margin: auto; */
     text-align: center;
@@ -28,4 +32,12 @@ header {
     border-radius: 10%;
     color: aliceblue;
     background: blue;
+}
+
+#h3element {
+    display: inline-block;
+}
+
+#inputCheckBox {
+    display: inline-block;
 }
