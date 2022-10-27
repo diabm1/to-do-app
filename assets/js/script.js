@@ -13,34 +13,46 @@ submitBtn.addEventListener("click", function handleClick(event) {
   // const taskItems = document.getElementById("taskItems");
   const divContainingTasks = document.getElementById("divContainingTasks")
 
-  const span = document.createElement("span")
-  span.id = "taskItems"
+  const p = document.createElement("p")
+  p.id = "taskItems"
   // span.id = "sideBySide"
   // const sideBySide = document.getElementById("sideBySide")
-  const sideBySide = document.getElementById("taskItems")
-  divContainingTasks.appendChild(span.id)
+  // const sideBySide = document.getElementById("taskItems")
+  divContainingTasks.appendChild(p)
 
   
 
   const inputCheckBox = document.createElement("input");
   inputCheckBox.id = "inputCheckBox";
   inputCheckBox.setAttribute("type", "checkbox");
-  taskItems.appendChild(inputCheckBox);
+  p.appendChild(inputCheckBox);
 
 
   const toDoEl = document.createElement("h3");
   toDoEl.id = "h3element";
   toDoEl.innerText = inputBox.value;
-  taskItems.appendChild(toDoEl);
+  p.appendChild(toDoEl);
+
+  const delBtn = document.createElement("button")
+  delBtn.setAttribute('id', 'delete-btn')
+  delBtn.innerText = "delete listing"
+  p.appendChild(delBtn)
+  delBtn.addEventListener("click", function() {  
+      inputCheckBox.style.display = "none"
+      toDoEl.style.display = "none"
+      delBtn.style.display = "none"
+  })
 
   //if clicked then strike through
   inputCheckBox.addEventListener("click", function () {
     toDoEl.style.textDecoration = "line-through";
-    // toDoEl.style.textDecoration = "";
-  });
+    // toDoEl.style.textDecoration = "none";
+  });  
 
-
-  
+  // inputCheckBox.addEventListener("click", function () {
+  //   // toDoEl.style.textDecoration = "line-through";
+  //   toDoEl.style.textDecoration = "";
+  // });
 
   // console.log(taskItems);
 

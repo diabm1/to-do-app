@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     background: red;
 }
@@ -36,8 +40,11 @@ header {
 
 #h3element {
     display: inline-block;
+    padding: 20px;
 }
 
 #inputCheckBox {
+    padding: 20px;
     display: inline-block;
 }
+
