@@ -34,22 +34,33 @@ submitBtn.addEventListener("click", function handleClick(event) {
   delBtn.setAttribute("id", "delete-btn");
   delBtn.innerText = "delete listing";
   p.appendChild(delBtn);
+
+  console.log(inputCheckBox.checked);
+
   delBtn.addEventListener("click", function () {
-    inputCheckBox.style.display = "none";
-    toDoEl.style.display = "none";
-    delBtn.style.display = "none";
+    if (inputCheckBox.checked === true) {
+      inputCheckBox.style.display = "none";
+      toDoEl.style.display = "none";
+      delBtn.style.display = "none";
+    } else if (inputCheckBox.checked === false) {
+      inputCheckBox.style.display = "inline-block";
+      toDoEl.style.display = "inline-block";
+      delBtn.style.display = "inline-block";
+    }
   });
 
   // let elementClicked = false;
 
   //if clicked then strike through
-  inputCheckBox.addEventListener("click", function() {
+  inputCheckBox.addEventListener("click", function () {
     console.log(inputCheckBox.checked);
 
     if (inputCheckBox.checked === true) {
       toDoEl.style.textDecoration = "line-through";
+      //delete item
     } else if (inputCheckBox.checked === false) {
       toDoEl.style.textDecoration = "none";
+      //do not delete item
     }
   });
 
