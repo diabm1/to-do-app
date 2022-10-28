@@ -1,6 +1,6 @@
 # to-do-app
 
-![to-do-app](to-do-app/assets/image/to-do-app.png)
+![to-do-app](./assets/image/to-do-app.png)
 
 # Table of Contents
   - [Description](#description)
